@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Formly usecase</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app="app" ng-controller="MainController as main" ng-cloak>
+  <div class="container-fluid">
+    <h1>Formly playground</h1>
+    <h2>Horizontal form</h2>
+    <p>This is a horizontal layout form like the one in
+      <a href="http://angular-formly.com/#/example/other/read-only-form" target="_blank">http://angular-formly.com/#/example/other/read-only-form</a>
+    </p>
+
+    <form ng-submit="main.api.onSubmit()" novalidate class="form-horizontal">
+      <formly-form model="main.vm.model" fields="main.vm.fields" form="main.vm.form" options="main.vm.options">
+        <div class="form-actions">
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-primary submit-button" ng-disabled="main.vm.form.$invalid">Submit</button>
+          </div>
+        </div>
+      </formly-form>
+    </form>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/api-check/dist/api-check.min.js"></script>
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-formly/dist/formly.min.js"></script>
+  <script src="../node_modules/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  <script src="formly.config.js"></script>
+  <script src="main.controller.js"></script>
+</body>
+
+</html>

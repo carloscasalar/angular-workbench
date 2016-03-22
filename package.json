@@ -1,0 +1,35 @@
+{
+  "name": "angular-workbench",
+  "version": "1.0.0",
+  "description": "Showcases and experiments with Angular and Angular plugins",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloscasalar/angular-workbench.git"
+  },
+  "keywords": [
+    "angular",
+    "plugins"
+  ],
+  "author": "Carlos Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloscasalar/angular-workbench/issues"
+  },
+  "homepage": "https://github.com/carloscasalar/angular-workbench#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-formly": "^8.1.0",
+    "angular-formly-templates-bootstrap": "^6.3.0",
+    "api-check": "^7.5.5",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
+  }
+}
