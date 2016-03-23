@@ -1,9 +1,9 @@
 (function(app, undefined) {
   'use strict';
 
-  app.controller('MainController', [MainController]);
+  app.controller('MainController', ['$window', MainController]);
 
-  function MainController() {
+  function MainController($window) {
     var self = this;
 
     self.api = {
@@ -31,7 +31,7 @@
     };
 
     function onSubmit(){
-      alert('submit');
+      $window.alert('submit');
     }
   }
 })(angular.module('app'));
